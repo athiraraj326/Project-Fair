@@ -57,7 +57,7 @@ const View = () => {
       </div>
       <div className="mt-2 allProjects">
         {
-          userProjects?.length ?
+          userProjects?.length>0 ?
           userProjects?.map(project=>(
             <div key={project?._id} className="border rounded p-2 d-flex justify-content-between mb-3">
               <h3>{project?.title}</h3>

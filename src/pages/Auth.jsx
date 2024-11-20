@@ -21,7 +21,6 @@ const Auth = ({ insideRegister }) => {
       // alert("Make api call")
       try{
         const result = await registerAPI(inputData)
-        console.log(result);
         console.log(result.data);
         if(result.status==200){
           alert(`Welcome ${result.data?.username}, Please login to explore our website!!!`)

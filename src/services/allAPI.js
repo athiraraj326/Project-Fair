@@ -27,7 +27,7 @@ export const allProjectAPI = async (searchKey,reqHeader)=>{
 }
 
 // userProjectAPI called by view component when page loaded in browser (useEffect)
-export const userProjectAPI = async (reqHeader)=>{
+export const userProjectAPI = async ()=>{
     return await commonAPI("GET",`${SERVER_URL}/user-projects`,{},reqHeader)
 }
 
